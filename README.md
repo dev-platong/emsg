@@ -2,6 +2,12 @@
 
 An ISO BMFF emsg atom generator.  This cli generates an emsg atom file with any given parameters.  You can insert it into an mp4 file by using an mp4 file editor such as Bento4's [mp4edit](https://www.bento4.com/documentation/mp4edit/) to deliver in-band media timed event data for MPEG-DASH, HLS, and so on.
 
+## Installation
+
+```sh
+$ pip install --upgrade emsg
+```
+
 ## Usage
 
 ```sh
