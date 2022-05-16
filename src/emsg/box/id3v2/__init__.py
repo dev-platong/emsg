@@ -26,7 +26,7 @@ class Builder:
         experimental_indicator=False,
         id3v2_footer=False,
     ) -> bytes:
-        flag_bytes = bytes(8)
+        flag_bytes = bytes(1)
         if unsynchronisation:
             flag_bytes += 1 << 7
         if extension_header:
@@ -50,7 +50,7 @@ class Builder:
 
     def _txxx_frame_field(self) -> bytes:
         text_encoding = (3).to_bytes(1, "big")
-        description = "Description".encode("utf-8")
+        description = "".encode("utf-8")
         delimiter = bytes(1)
         value = self.__txxx_frame_info.encode("utf-8")
         return text_encoding + description + delimiter + value

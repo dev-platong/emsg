@@ -24,7 +24,6 @@ class Builder:
         self._full_box_builder = full_box.Builder(
             boxtype=self._boxtype, version=version
         )
-        # super().__init__(boxtype=self._boxtype, version=version)
         self.value = value
         self.id = id
         self.message_data = message_data

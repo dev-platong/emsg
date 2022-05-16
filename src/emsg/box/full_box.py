@@ -16,7 +16,7 @@ class Builder:
 
     def build(self) -> bytes:
         version = bytes.fromhex(hex(self.version)[2:].rjust(int(8 / 4), "0"))
-        flags = bytes.fromhex(hex(self.version)[2:].rjust(int(24 / 4), "0"))
+        flags = bytes.fromhex(hex(self.flags)[2:].rjust(int(24 / 4), "0"))
         return self._box_builder.set_user_data(
             version + flags + self._full_box_user_data
         ).build()
