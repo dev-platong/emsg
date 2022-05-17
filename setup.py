@@ -6,7 +6,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="emsg",
-    version="0.0.3",
+    version="0.0.4",
     description="An ISO BMFF emsg atom generator",
     long_description=long_description,
     long_description_content_type="text/markdown",
