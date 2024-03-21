@@ -31,7 +31,7 @@ parser.add_argument(
 parser.add_argument(
     "--box_version",
     default=DEFAULT_BOX_VERSION,
-    choices=[0, 1],
+    choices=["0", "1"],
     help="set emsg box version (default={})".format(DEFAULT_BOX_VERSION),
 )
 parser.add_argument(
